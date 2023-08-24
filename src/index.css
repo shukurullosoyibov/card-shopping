@@ -1,0 +1,45 @@
+:root{
+    --dark_bg: #DDD8C4;
+    --dark_b: #e4e3df;
+    --light_b: #343666;;
+    --light_bg: #1A1A34;
+}
+body{
+    background-color: var(--dark_bg)
+}
+.bsk{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: rgba(0,0,0, 0.5);
+    overflow: hidden;
+}
+.basket-list{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 6;
+    transform: translate(-50%, -50%);
+    max-width: 95%;
+    width: 50rem;
+    background: #fff;
+    box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.4) ;
+    animation: show 0.4s ease-in-out;
+}
+@keyframes show {
+    from{
+        top: 80%; opacity: 0;
+        
+    }
+    to{
+        top: 50%; opacity: 1;
+        
+    }
+}
+.btnq{
+    margin-right: 10px;
+    bottom: 10px;
+    /* width: 2rem; */
+}
